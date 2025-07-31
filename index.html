@@ -7,8 +7,12 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&display=swap" rel="stylesheet">
     <style type="text/tailwindcss">
         body {
             font-family: 'Inter', sans-serif;
@@ -59,6 +63,30 @@
             font-size: small;
             font-weight: bold;
         }
+        .silkscreen-regular {
+            font-family: "Silkscreen", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .tourney-font {
+            font-family: "Tourney", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+        .bitcount-prop-single-font2 {
+            font-family: "Bitcount Prop Single", system-ui;
+            font-optical-sizing: auto;
+            font-weight: 450;
+            font-style: normal;
+            font-variation-settings:
+                "slnt" 0,
+                "CRSV" 0.5,
+                "ELSH" 0,
+                "ELXP" 0;
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -101,10 +129,10 @@
         <!-- Home Section -->
         <section id="home" class="min-h-screen ml-[4vw] flex items-center fade-in-section mt-0">
             <div class="text-center md:text-left w-full">
-                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight">
+                <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight tourney-font">
                     Hi, I'm <span class="accent-color">Shrika Alva</span>
                 </h1>
-                <p class="mt-4 text-lg md:text-2xl text-gray-300">
+                <p class="mt-4 text-lg md:text-2xl text-gray-300 bitcount-prop-single-font2">
                     A Passionate <span id="role-text"></span>
                 </p>
                 <p class="mt-6 max-w-2xl mx-auto md:mx-0 text-gray-400">
@@ -124,7 +152,7 @@
 
         <!-- Projects Section -->
         <section id="projects" class="py-20 fade-in-section">
-            <h2 class="section-title">My <span>Projects</span></h2>
+            <h2 class="section-title silkscreen-regular">My <span>Projects</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Project Card 1 -->
                 <div class="card">
@@ -225,7 +253,7 @@
 
         <!-- Contact Section -->
         <section id="contact" class="py-20 fade-in-section">
-            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <h2 class="section-title silkscreen-regular">Get In <span>Touch</span></h2>
             <div class="max-w-xl mx-auto text-center">
                 <p class="text-gray-400 mb-8">
                     I'm currently open to new opportunities and collaborations. If you have a project in mind or just want to say hello, feel free to reach out.
